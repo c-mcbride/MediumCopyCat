@@ -1,0 +1,158 @@
+@media (min-width: 729px) and (max-width: 1540px){
+    .page-container{
+        display: grid;
+        grid-template-rows: 5.8% 89% 5.2%;
+        grid-template-areas:
+            'header-container'
+            'main-container'
+            'footer-container';
+        height: 100vh;
+    }
+
+    .header-right-links{
+        display: flex;
+        grid-area: header-right-links;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .medium-header-title-link{
+        display: flex;
+        grid-area: medium-header;
+        align-items: center;
+    }
+
+    #top-medium-link{
+        font-weight: 700;
+        font-size: 35px;
+        letter-spacing: -1.8px;
+    }
+
+    .get-started-button{
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+    }
+
+    .side-photo{
+        display: none;
+    }
+
+    .header-container{
+        display: grid;
+        grid-template-columns: 4% 22% 15% auto;
+        grid-template-areas:
+            '. medium-header . header-right-links .';
+        grid-area: header-container;
+        align-items: center;
+        border-bottom: 1px solid black;
+        height: 100%;
+    }
+
+
+    .main-container{
+        grid-area: main-container;
+        height: 100%;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 4% 98%;
+        grid-template-areas:
+            '. main-text';
+        position: relative;
+    }
+
+    .main-content{
+        grid-area: main-text;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        top: 25%;
+    }
+
+    .start-reading-button{
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 15px 48px;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+    }
+
+    .human-stories{
+        font-weight: 500;
+        font-size: 110px;
+        line-height: 0.8;
+    }
+
+    .place-to-read{
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .footer-container{
+        grid-area: footer-container;
+        display: flex;
+        height: 100%;
+        border-top: 1px solid black;
+        background-color: black;
+    }
+
+    .footer-links{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        background-color: black;
+        margin-left: 4%;
+    }
+
+    .bottom a{
+        display: block;
+        background-color: black;
+        color: white;
+        font-size: 13px;
+        text-decoration: none;
+    }
+
+    .footer-links a{
+        display: none;
+    }
+
+     /* Display only the links with specific IDs */
+     #about a,
+     #help a,
+     #terms a,
+     #privacy a {
+         display: block; /* Display the selected links */
+
+     }
+
+     /* Optional: If you need to reorder them */
+     #about {
+        order: 1;
+        margin-right: 12px;
+    }
+    #help {
+        order: 2;
+        margin-right: 12px;
+    }
+    #terms {
+        order: 3;
+        margin-right: 12px;
+    }
+    #privacy {
+        order: 4;
+    }
+}
